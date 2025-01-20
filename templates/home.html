@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>Conversion Prediction</h1>
+    <form action="{{ url_for('predict_datapoint')}}" method="post">
+      <input type="text" name="Age" placeholder="Age" required="required" /><br>
+        <input type="text" name="Gender" placeholder="Gender" required="required" /><br>
+        <input type="text" name="Income" placeholder="Income" required="required" /><br>
+        <input type="text" name="AdSpend" placeholder="AdSpend" required="required" /><br>
+        <input type="text" name="ClickThroughRate" placeholder="ClickThroughRate" required="required" /><br>
+        <input type="text" name="ConversionRate" placeholder="ConversionRate" required="required" /><br>
+        <input type="text" name="WebsiteVisits" placeholder="WebsiteVisits" required="required" /><br>
+        <input type="text" name="PagesPerVisit" placeholder="PagesPerVisit" required="required" /><br>
+        <input type="text" name="TimeOnSite" placeholder="TimeOnSite" required="required" /><br>
+        <input type="text" name="SocialShares" placeholder="SocialShares" required="required" /><br>
+        <input type="text" name="EmailOpens" placeholder="EmailOpens" required="required" /><br>
+        <input type="text" name="EmailClicks" placeholder="EmailClicks" required="required" /><br>
+        <input type="text" name="PreviousPurchases" placeholder="PreviousPurchases" required="required" /><br>
+        <input type="text" name="LoyaltyPoints" placeholder="LoyaltyPoints" required="required" /><br>
+        <input type="text" name="Campaign_Channel" placeholder="Campaign_Channel" required="required" /><br>
+        <input type="text" name="Campaign_Type" placeholder="Campaign_Type" required="required" /><br>
+           
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+<body>
+
+   <br>
+   <br>
+
+
+ </div>
+ {{result}}
+
+</body>
+</html>   
+
+   
+   
